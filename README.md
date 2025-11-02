@@ -49,7 +49,7 @@ Install the project dependencies:
 npm install
 
 
-Install the icon library (if not already in package.json):
+Install the icon library :
 
 npm install lucide-react
 
