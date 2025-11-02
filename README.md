@@ -1,16 +1,76 @@
-# React + Vite
+CortensorPulse - Hackathon #2 Submission
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CortensorPulse is a backend-less, real-time observability dashboard for the Cortensor decentralized inference network. It connects directly to the official network API to provide live stats on node performance and health.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"At a Glance" Summary Cards: Instantly view high-level network health:
 
-## React Compiler
+Total Active Nodes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Average Total Score (Qualitative)
 
-## Expanding the ESLint configuration
+Average Level (Quantitative)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interactive Node Leaderboard: A fully searchable and sortable table of all active nodes.
+
+Live Search & Filter: Instantly filter the entire list by a node's wallet address as you type.
+
+One-Click Sorting: Re-order the leaderboard by Official Rank or by Total Score (high to low).
+
+"Node Detail" Modal: Click any node to open a pop-up with granular, "deep-dive" stats, including all cognitive points, timestamps, and quantitative data.
+
+100% Live Data: Connects directly to the official Cortensor Dashboard API (https://db-be-7.cortensor.network/leaderboard) for real-time data.
+
+🚀 Getting Started
+
+This project is a 100% frontend application and does not require a separate backend.
+
+Prerequisites
+
+Node.js (v18 or later)
+
+npm (comes with Node.js)
+
+Installation
+
+Clone the repository:
+
+git clone [https://github.com/Sanjugupta21/cortensor-pulse.git](https://github.com/Sanjugupta21/cortensor-pulse.git)
+
+
+Navigate to the project directory:
+
+cd cortensor-pulse
+
+
+Install the project dependencies:
+
+npm install
+
+
+Install the icon library (if not already in package.json):
+
+npm install lucide-react
+
+
+Usage
+
+Once the installation is complete, run the development server:
+
+npm run dev
+
+
+This will automatically open the dashboard in your browser, usually at http://localhost:5173. The app will fetch live data from the Cortensor network immediately.
+
+👤 Maintainer
+
+Gupta Sanju Babul
+
+🤝 Contributing
+
+Contributions are welcome! Please feel free to fork the repository and submit a Pull Request.
+
+📄 License
+
+This project is licensed under the MIT License.
